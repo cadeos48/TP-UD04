@@ -12,13 +12,14 @@ package avm.pre04;
  */
 public class EsPrincip1 {
     public static void main(String[] args){
-        int[] unArray = ES.intValores(5);
+        int[] unArray = new int[5];
         int suma = 0;
-        
-        for (int cont = 0; cont<unArray.length; cont++){
+              
+        for(int cont= 0; cont < unArray.length; cont++){
+            unArray[cont] = ES.leerEntero();           
             suma = suma + unArray[cont];
         }
-        System.out.print("La suma total es: " +suma); 
+        System.out.print("La suma total es: " +suma);
+        
     }
-}     
-   
+}
