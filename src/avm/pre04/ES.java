@@ -20,11 +20,9 @@ public class ES {
     public static int leerEntero(){
         int numEnt = 0;
         Scanner teclado = new Scanner(System.in);
-        boolean validacion = false;
-        
+        boolean validacion = false;        
         do{
-           try {
-               System.out.println("Introduce un número");
+           try {               
                numEnt = teclado.nextInt();
                validacion = true;
            }
@@ -39,12 +37,12 @@ public class ES {
     /* Correción error método leerEntero(); en el que puse un solo = en el while
     en vez de dos: while(validacion = false);
     Correción de Antonio: En el while estás haciendo dos cosas. Primero poner
-    validación a falso ya que estásasignando un valor (un igual en vez de dos)
+    validación a falso ya que estás asignando un valor (un igual en vez de dos)
     y segundo indicas que la condición es falsa al realizar la acción 1 por lo que
     sale del do-while y devuelve el valor 0. Si cambias el = por == debería
     funcionarte sin problema
     */
-    
+          
     public static String parOImpar(int numero){
         if(numero%2 == 0){
             return ". El número es par";

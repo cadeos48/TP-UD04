@@ -23,7 +23,7 @@ public class EsPrincip2 {
             // Se multiplica por 50 el número randmom, ya que esa función
             // da un número entre 0 y 1, por lo que al multiplicarlo por
             //50 dará un número entre 0 y 50.
-            System.out.print("La posición " +cont +" del array, contiene en número "
+            System.out.print("La posición " +cont +" del array, contiene el número "
             +arrayEnt[cont]);
             System.out.println(ES.parOImpar(arrayEnt[cont]));//Llama al método parOImpar
             //y le pasa por parámetro el número que contiene la posición "cont"

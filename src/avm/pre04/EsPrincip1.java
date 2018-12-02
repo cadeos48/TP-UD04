@@ -16,10 +16,10 @@ public class EsPrincip1 {
         int suma = 0;
               
         for(int cont= 0; cont < unArray.length; cont++){
+            System.out.println("Introduce un número");
             unArray[cont] = ES.leerEntero();           
             suma = suma + unArray[cont];
         }
-        System.out.print("La suma total es: " +suma);
-        
+        System.out.println("La suma total es: " +suma);        
     }
 }
